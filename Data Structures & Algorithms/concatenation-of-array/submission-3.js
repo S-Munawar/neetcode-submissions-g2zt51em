@@ -1,0 +1,14 @@
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @return {number[]}
+     */
+    getConcatenation(nums) {
+        let ans = []
+        let n = nums.length
+        for(let i = 0; i < n; i++) {
+            ans[i] = ans[n+i] = nums[i]
+        }
+        return ans
+    }
+}
